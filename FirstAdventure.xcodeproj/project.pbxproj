@@ -34,6 +34,7 @@
 		BF4D4EE72017E693002C1E71 /* Exit.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Exit.hpp; sourceTree = "<group>"; };
 		BF4D4EE92017E860002C1E71 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		BF4D4EEA2017E860002C1E71 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		BF4D4EF9201809DE002C1E71 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 		BF268890201689E8007E431C /* FirstAdventure */ = {
 			isa = PBXGroup;
 			children = (
+				BF4D4EF9201809DE002C1E71 /* CMakeLists.txt */,
 				BF268891201689E8007E431C /* main.cpp */,
 				BF4D4EE62017E693002C1E71 /* Exit.cpp */,
 				BF4D4EE72017E693002C1E71 /* Exit.hpp */,
