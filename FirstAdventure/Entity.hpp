@@ -11,29 +11,29 @@
 
 #include <stdio.h>
 #include <string>
+#include "Stats.hpp"
 
 class Command;
+class EntityChildren;
 
 //Entity class is the main game object.
 //It holds a number of components.
 class Entity
 {
-public:
-    static const int MAX_CHILDREN = 4;
-
 private:
     std::string description_;
+    Stats* stats_;
     Command* command_;
     Entity* parent_;
-    Entity* children_[MAX_CHILDREN] = { nullptr, nullptr, nullptr, nullptr };
-    
-    int children{0};
-    
+    EntityChildren* children_;
+        
 public:
-    Entity(std::string description, Command* command, Entity* parent)
-        : description_{description}, command_{command}, parent_{parent}
+    Entity(std::string description, Stats* stats, Command* command, Entity* parent, EntityChildren* children)
+    : description_{description}, stats_{stats}, command_{command}, parent_{parent}, children_{children}
     {
+
     }
+    
     
     std::string getDescription()
     {
@@ -55,14 +55,14 @@ public:
         return parent_;
     }
     
-    void addChild(Entity* child)
+    Stats* getStats()
     {
-        children_[children++ % MAX_CHILDREN] = child;
+        return stats_;
     }
-    
-    Entity* getChildren(int i)
+
+    EntityChildren* getChildren()
     {
-        return children_[i];
+        return children_;
     }
 };
 

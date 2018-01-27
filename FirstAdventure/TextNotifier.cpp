@@ -13,5 +13,28 @@ using namespace std;
 
 void TextNotifier::notify(Message message)
 {
-    cout << message << endl;
+    switch(message.type)
+    {
+        case(Notifier::MessageType::WIN):
+        {
+            //we won!
+            cout << message.message << endl;
+            break;
+        }
+        case(Notifier::MessageType::LOOSE):
+        {
+            //we lost!
+            cout << message.message << endl;
+            break;
+        }
+        case(Notifier::MessageType::TEXT):
+        {
+            cout << message.message << endl;
+            break;
+        }
+        default:
+        {
+            cout << message.message << endl;
+        }
+    }
 }

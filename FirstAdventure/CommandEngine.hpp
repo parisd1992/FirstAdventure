@@ -24,9 +24,10 @@ class CommandEngine
 {
 public:
     using CommandID = string;
+    using CommandMap = unordered_map<CommandID, Command*>;
 
 private:
-    unordered_map<CommandID, Command*> commandMap_;
+    CommandMap commandMap_;
     
     
 public:
@@ -35,7 +36,7 @@ public:
         
     }
     
-    void generateCommands(Entity& entity, Notifier& notifier);
+    CommandMap* generateCommands(Entity& entity);
     void executeCommand(Entity& entity, Notifier& notifier, CommandID ID);
 };
 

@@ -7,6 +7,7 @@
 //
 
 #include "ExitCommand.hpp"
+#include "EntityChildren.hpp"
 
 
 string ExitCommand::getVerb()
@@ -16,6 +17,12 @@ string ExitCommand::getVerb()
 
 void ExitCommand::execute(Entity& entity, Notifier& notifier)
 {
+    Entity* parent = entity.getParentEntity();
+    parent->getChildren()->removeChild(&entity);
+    
     entity.setParentEntity(exitTo_);
-    notifier.notify(entity.getDescription() + " " + getVerb());
+    
+    exitTo_->getChildren()->addChild(&entity);
+    
+    notifier.notify(Notifier::Message(Notifier::MessageType::TEXT, entity.getDescription() + " " + getVerb()));
 }

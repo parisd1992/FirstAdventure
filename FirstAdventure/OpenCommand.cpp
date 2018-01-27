@@ -7,6 +7,7 @@
 //
 
 #include "OpenCommand.hpp"
+#include "EntityChildren.hpp"
 
 string OpenCommand::getVerb()
 {
@@ -17,14 +18,22 @@ void OpenCommand::execute(Entity &entity, Notifier &notifier)
 {
     if(!isOpen_)
     {
-        entity.addChild(item_);
-        notifier.notify(entity.getDescription() + " obtain " + item_->getDescription());
+        if(item_)
+        {
+            entity.getChildren()->addChild(item_);
+            notifier.notify(Notifier::Message(Notifier::MessageType::TEXT,
+                                              entity.getDescription() + " obtain " + item_->getDescription()));
+        }
+        else
+        {
+            notifier.notify(Notifier::Message(Notifier::MessageType::TEXT, "It's empty!"));
+        }
         
         isOpen_ = true;
     }
     else
     {
-        notifier.notify("It's already open...");
+        notifier.notify(Notifier::Message(Notifier::MessageType::TEXT, "It's already open..."));
     }
     
     //TODO - how do we remove this chest ?

@@ -15,7 +15,21 @@
 class Notifier
 {
 public:
-    using Message = std::string;
+    enum class MessageType
+    {
+        TEXT = 0,
+        WIN,
+        LOOSE
+    };
+    
+    struct Message
+    {
+        Message(MessageType type, std::string message) : type(type), message(message)
+        {}
+        
+        MessageType type;
+        std::string message;
+    };
     
 public:
     ~Notifier()

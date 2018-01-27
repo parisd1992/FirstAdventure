@@ -7,6 +7,7 @@
 //
 
 #include "TextGraphicsEngine.hpp"
+#include "EntityChildren.hpp"
 #include <string>
 #include <iostream>
 
@@ -14,7 +15,7 @@
 using namespace std;
 
 void TextGraphicsEngine::render(Entity &entity)
-{
+{    
     std::string name = entity.getDescription();
     Entity* parent = entity.getParentEntity();
     
@@ -22,15 +23,16 @@ void TextGraphicsEngine::render(Entity &entity)
     {
         cout << name << " are in " << parent->getDescription() << endl;
         
-        for( int i = 0 ; i < Entity::MAX_CHILDREN ; i++)
+        EntityChildren* children = parent->getChildren();
+        
+        for(int i = 0; i < children->numberOfChildren(); i++)
         {
-            Entity* child = parent->getChildren(i);
-            
-            if (child)
+            if (children->getChild(i) != &entity)
             {
-                cout << name << " see " << child->getDescription() << endl;
+                cout << name << " see " << children->getChild(i)->getDescription() << endl;
             }
         }
+        cout << "################################################################" << endl;
     }
     cout << endl;
 }

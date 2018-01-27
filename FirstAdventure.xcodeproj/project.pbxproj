@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF268892201689E8007E431C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF268891201689E8007E431C /* main.cpp */; };
-		BF90A1DE201A9EB8005E2396 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF90A1DC201A9EB8005E2396 /* Entity.cpp */; };
 		BF90A1E1201AA046005E2396 /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF90A1DF201AA045005E2396 /* Command.cpp */; };
 		BF90A1E4201AA3FB005E2396 /* ExitCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF90A1E2201AA3FB005E2396 /* ExitCommand.cpp */; };
 		BFCE7393201BDADF00ABE531 /* Description.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCE7391201BDADF00ABE531 /* Description.cpp */; };
@@ -16,6 +15,11 @@
 		BFCE739F201BEFEC00ABE531 /* CommandEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCE739D201BEFEC00ABE531 /* CommandEngine.cpp */; };
 		BFCE73A5201BF8B300ABE531 /* TextNotifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCE73A3201BF8B300ABE531 /* TextNotifier.cpp */; };
 		BFCE73A8201C039200ABE531 /* OpenCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCE73A6201C039200ABE531 /* OpenCommand.cpp */; };
+		BFEFEF50201C740A0067CA90 /* UnlockCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFEFEF4E201C740A0067CA90 /* UnlockCommand.cpp */; };
+		BFEFEF53201C7DF40067CA90 /* AttackCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFEFEF51201C7DF40067CA90 /* AttackCommand.cpp */; };
+		BFEFEF59201C9EE30067CA90 /* WinCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFEFEF57201C9EE30067CA90 /* WinCommand.cpp */; };
+		BFEFEF5C201CDB6B0067CA90 /* EntityChildren.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFEFEF5A201CDB6B0067CA90 /* EntityChildren.cpp */; };
+		BFEFEF5F201CED640067CA90 /* EntityChildNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFEFEF5D201CED640067CA90 /* EntityChildNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +38,6 @@
 		BF26888E201689E8007E431C /* FirstAdventure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstAdventure; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF268891201689E8007E431C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BF4D4EF9201809DE002C1E71 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
-		BF90A1DC201A9EB8005E2396 /* Entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
 		BF90A1DD201A9EB8005E2396 /* Entity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
 		BF90A1DF201AA045005E2396 /* Command.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
 		BF90A1E0201AA045005E2396 /* Command.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Command.hpp; sourceTree = "<group>"; };
@@ -52,6 +55,17 @@
 		BFCE73A4201BF8B300ABE531 /* TextNotifier.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextNotifier.hpp; sourceTree = "<group>"; };
 		BFCE73A6201C039200ABE531 /* OpenCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenCommand.cpp; sourceTree = "<group>"; };
 		BFCE73A7201C039200ABE531 /* OpenCommand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenCommand.hpp; sourceTree = "<group>"; };
+		BFEFEF4E201C740A0067CA90 /* UnlockCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UnlockCommand.cpp; sourceTree = "<group>"; };
+		BFEFEF4F201C740A0067CA90 /* UnlockCommand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UnlockCommand.hpp; sourceTree = "<group>"; };
+		BFEFEF51201C7DF40067CA90 /* AttackCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AttackCommand.cpp; sourceTree = "<group>"; };
+		BFEFEF52201C7DF40067CA90 /* AttackCommand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AttackCommand.hpp; sourceTree = "<group>"; };
+		BFEFEF55201C7F200067CA90 /* Stats.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stats.hpp; sourceTree = "<group>"; };
+		BFEFEF57201C9EE30067CA90 /* WinCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WinCommand.cpp; sourceTree = "<group>"; };
+		BFEFEF58201C9EE30067CA90 /* WinCommand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WinCommand.hpp; sourceTree = "<group>"; };
+		BFEFEF5A201CDB6B0067CA90 /* EntityChildren.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EntityChildren.cpp; sourceTree = "<group>"; };
+		BFEFEF5B201CDB6B0067CA90 /* EntityChildren.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EntityChildren.hpp; sourceTree = "<group>"; };
+		BFEFEF5D201CED640067CA90 /* EntityChildNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EntityChildNode.cpp; sourceTree = "<group>"; };
+		BFEFEF5E201CED640067CA90 /* EntityChildNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EntityChildNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +100,6 @@
 			children = (
 				BF4D4EF9201809DE002C1E71 /* CMakeLists.txt */,
 				BF268891201689E8007E431C /* main.cpp */,
-				BF90A1DC201A9EB8005E2396 /* Entity.cpp */,
 				BF90A1DD201A9EB8005E2396 /* Entity.hpp */,
 				BF90A1DF201AA045005E2396 /* Command.cpp */,
 				BF90A1E0201AA045005E2396 /* Command.hpp */,
@@ -104,6 +117,17 @@
 				BFCE73A4201BF8B300ABE531 /* TextNotifier.hpp */,
 				BFCE73A6201C039200ABE531 /* OpenCommand.cpp */,
 				BFCE73A7201C039200ABE531 /* OpenCommand.hpp */,
+				BFEFEF4E201C740A0067CA90 /* UnlockCommand.cpp */,
+				BFEFEF4F201C740A0067CA90 /* UnlockCommand.hpp */,
+				BFEFEF51201C7DF40067CA90 /* AttackCommand.cpp */,
+				BFEFEF52201C7DF40067CA90 /* AttackCommand.hpp */,
+				BFEFEF55201C7F200067CA90 /* Stats.hpp */,
+				BFEFEF57201C9EE30067CA90 /* WinCommand.cpp */,
+				BFEFEF58201C9EE30067CA90 /* WinCommand.hpp */,
+				BFEFEF5A201CDB6B0067CA90 /* EntityChildren.cpp */,
+				BFEFEF5B201CDB6B0067CA90 /* EntityChildren.hpp */,
+				BFEFEF5D201CED640067CA90 /* EntityChildNode.cpp */,
+				BFEFEF5E201CED640067CA90 /* EntityChildNode.hpp */,
 			);
 			path = FirstAdventure;
 			sourceTree = "<group>";
@@ -165,12 +189,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFEFEF59201C9EE30067CA90 /* WinCommand.cpp in Sources */,
+				BFEFEF5F201CED640067CA90 /* EntityChildNode.cpp in Sources */,
 				BF90A1E4201AA3FB005E2396 /* ExitCommand.cpp in Sources */,
 				BFCE73A8201C039200ABE531 /* OpenCommand.cpp in Sources */,
+				BFEFEF5C201CDB6B0067CA90 /* EntityChildren.cpp in Sources */,
 				BFCE73A5201BF8B300ABE531 /* TextNotifier.cpp in Sources */,
 				BF90A1E1201AA046005E2396 /* Command.cpp in Sources */,
+				BFEFEF53201C7DF40067CA90 /* AttackCommand.cpp in Sources */,
 				BFCE7393201BDADF00ABE531 /* Description.cpp in Sources */,
-				BF90A1DE201A9EB8005E2396 /* Entity.cpp in Sources */,
+				BFEFEF50201C740A0067CA90 /* UnlockCommand.cpp in Sources */,
 				BF268892201689E8007E431C /* main.cpp in Sources */,
 				BFCE7399201BE78A00ABE531 /* TextGraphicsEngine.cpp in Sources */,
 				BFCE739F201BEFEC00ABE531 /* CommandEngine.cpp in Sources */,

@@ -7,27 +7,28 @@
 //
 
 #include "CommandEngine.hpp"
+#include "EntityChildren.hpp"
 
-void CommandEngine::generateCommands(Entity &entity, Notifier &notifier)
+CommandEngine::CommandMap* CommandEngine::generateCommands(Entity &entity)
 {
+    commandMap_.clear();
+    
     Entity* parent = entity.getParentEntity();
     
     if (parent)
     {
-        notifier.notify("What will you do? (Type a corresponding number)");
-        
-        for( int i = 0 ; i < Entity::MAX_CHILDREN ; i++)
+        EntityChildren* children = parent->getChildren();
+                
+        for(int i = 0; i < children->numberOfChildren(); i++)
         {
-            Entity* child = parent->getChildren(i);
-            
-            if (child)
+            if(children->getChild(i) != &entity)
             {
-                child->getCommand();
-                commandMap_.emplace(to_string(i+1), child->getCommand());
-                notifier.notify(to_string(i+1) + ": " + child->getCommand()->getVerb());
+                commandMap_.emplace(to_string(i+1), children->getChild(i)->getCommand());
             }
         }
     }
+    
+    return &commandMap_;
 }
 
 void CommandEngine::executeCommand(Entity& entity, Notifier& notifier, CommandID ID)
@@ -39,8 +40,9 @@ void CommandEngine::executeCommand(Entity& entity, Notifier& notifier, CommandID
     }
     else
     {
-        notifier.notify("You do nothing...");
+        notifier.notify(Notifier::Message(Notifier::MessageType::TEXT, "You do nothing..."));
     }
+    
     commandMap_.clear();
 }
 
