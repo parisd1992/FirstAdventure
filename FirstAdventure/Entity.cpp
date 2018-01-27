@@ -1,9 +1,9 @@
 //
-//  Room.cpp
+//  Entity.cpp
 //  FirstAdventure
 //
-//  Created by David Paris on 23/01/2018.
+//  Created by David Paris on 25/01/2018.
 //  Copyright © 2018 David Paris. All rights reserved.
 //
 
-#include "Room.hpp"
+#include "Entity.hpp"

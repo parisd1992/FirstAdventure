@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BF268892201689E8007E431C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF268891201689E8007E431C /* main.cpp */; };
-		BF4D4EE52017E5FE002C1E71 /* Room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF4D4EE32017E5FE002C1E71 /* Room.cpp */; };
-		BF4D4EE82017E693002C1E71 /* Exit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF4D4EE62017E693002C1E71 /* Exit.cpp */; };
-		BF4D4EEB2017E860002C1E71 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF4D4EE92017E860002C1E71 /* Player.cpp */; };
+		BF90A1DE201A9EB8005E2396 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF90A1DC201A9EB8005E2396 /* Entity.cpp */; };
+		BF90A1E1201AA046005E2396 /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF90A1DF201AA045005E2396 /* Command.cpp */; };
+		BF90A1E4201AA3FB005E2396 /* ExitCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF90A1E2201AA3FB005E2396 /* ExitCommand.cpp */; };
+		BFCE7393201BDADF00ABE531 /* Description.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCE7391201BDADF00ABE531 /* Description.cpp */; };
+		BFCE7399201BE78A00ABE531 /* TextGraphicsEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCE7397201BE78A00ABE531 /* TextGraphicsEngine.cpp */; };
+		BFCE739F201BEFEC00ABE531 /* CommandEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCE739D201BEFEC00ABE531 /* CommandEngine.cpp */; };
+		BFCE73A5201BF8B300ABE531 /* TextNotifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCE73A3201BF8B300ABE531 /* TextNotifier.cpp */; };
+		BFCE73A8201C039200ABE531 /* OpenCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCE73A6201C039200ABE531 /* OpenCommand.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,13 +33,25 @@
 /* Begin PBXFileReference section */
 		BF26888E201689E8007E431C /* FirstAdventure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstAdventure; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF268891201689E8007E431C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		BF4D4EE32017E5FE002C1E71 /* Room.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Room.cpp; sourceTree = "<group>"; };
-		BF4D4EE42017E5FE002C1E71 /* Room.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Room.hpp; sourceTree = "<group>"; };
-		BF4D4EE62017E693002C1E71 /* Exit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Exit.cpp; sourceTree = "<group>"; };
-		BF4D4EE72017E693002C1E71 /* Exit.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Exit.hpp; sourceTree = "<group>"; };
-		BF4D4EE92017E860002C1E71 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
-		BF4D4EEA2017E860002C1E71 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 		BF4D4EF9201809DE002C1E71 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		BF90A1DC201A9EB8005E2396 /* Entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		BF90A1DD201A9EB8005E2396 /* Entity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
+		BF90A1DF201AA045005E2396 /* Command.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
+		BF90A1E0201AA045005E2396 /* Command.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Command.hpp; sourceTree = "<group>"; };
+		BF90A1E2201AA3FB005E2396 /* ExitCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExitCommand.cpp; sourceTree = "<group>"; };
+		BF90A1E3201AA3FB005E2396 /* ExitCommand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExitCommand.hpp; sourceTree = "<group>"; };
+		BFCE7391201BDADF00ABE531 /* Description.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Description.cpp; sourceTree = "<group>"; };
+		BFCE7392201BDADF00ABE531 /* Description.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Description.hpp; sourceTree = "<group>"; };
+		BFCE7395201BE71200ABE531 /* GraphicsEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphicsEngine.hpp; sourceTree = "<group>"; };
+		BFCE7397201BE78A00ABE531 /* TextGraphicsEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextGraphicsEngine.cpp; sourceTree = "<group>"; };
+		BFCE7398201BE78A00ABE531 /* TextGraphicsEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextGraphicsEngine.hpp; sourceTree = "<group>"; };
+		BFCE739D201BEFEC00ABE531 /* CommandEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CommandEngine.cpp; sourceTree = "<group>"; };
+		BFCE739E201BEFEC00ABE531 /* CommandEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CommandEngine.hpp; sourceTree = "<group>"; };
+		BFCE73A1201BF85600ABE531 /* Notifier.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Notifier.hpp; sourceTree = "<group>"; };
+		BFCE73A3201BF8B300ABE531 /* TextNotifier.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextNotifier.cpp; sourceTree = "<group>"; };
+		BFCE73A4201BF8B300ABE531 /* TextNotifier.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextNotifier.hpp; sourceTree = "<group>"; };
+		BFCE73A6201C039200ABE531 /* OpenCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpenCommand.cpp; sourceTree = "<group>"; };
+		BFCE73A7201C039200ABE531 /* OpenCommand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OpenCommand.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +86,24 @@
 			children = (
 				BF4D4EF9201809DE002C1E71 /* CMakeLists.txt */,
 				BF268891201689E8007E431C /* main.cpp */,
-				BF4D4EE62017E693002C1E71 /* Exit.cpp */,
-				BF4D4EE72017E693002C1E71 /* Exit.hpp */,
-				BF4D4EE32017E5FE002C1E71 /* Room.cpp */,
-				BF4D4EE42017E5FE002C1E71 /* Room.hpp */,
-				BF4D4EE92017E860002C1E71 /* Player.cpp */,
-				BF4D4EEA2017E860002C1E71 /* Player.hpp */,
+				BF90A1DC201A9EB8005E2396 /* Entity.cpp */,
+				BF90A1DD201A9EB8005E2396 /* Entity.hpp */,
+				BF90A1DF201AA045005E2396 /* Command.cpp */,
+				BF90A1E0201AA045005E2396 /* Command.hpp */,
+				BF90A1E2201AA3FB005E2396 /* ExitCommand.cpp */,
+				BF90A1E3201AA3FB005E2396 /* ExitCommand.hpp */,
+				BFCE7391201BDADF00ABE531 /* Description.cpp */,
+				BFCE7392201BDADF00ABE531 /* Description.hpp */,
+				BFCE7395201BE71200ABE531 /* GraphicsEngine.hpp */,
+				BFCE7397201BE78A00ABE531 /* TextGraphicsEngine.cpp */,
+				BFCE7398201BE78A00ABE531 /* TextGraphicsEngine.hpp */,
+				BFCE739D201BEFEC00ABE531 /* CommandEngine.cpp */,
+				BFCE739E201BEFEC00ABE531 /* CommandEngine.hpp */,
+				BFCE73A1201BF85600ABE531 /* Notifier.hpp */,
+				BFCE73A3201BF8B300ABE531 /* TextNotifier.cpp */,
+				BFCE73A4201BF8B300ABE531 /* TextNotifier.hpp */,
+				BFCE73A6201C039200ABE531 /* OpenCommand.cpp */,
+				BFCE73A7201C039200ABE531 /* OpenCommand.hpp */,
 			);
 			path = FirstAdventure;
 			sourceTree = "<group>";
@@ -136,10 +165,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF4D4EEB2017E860002C1E71 /* Player.cpp in Sources */,
-				BF4D4EE82017E693002C1E71 /* Exit.cpp in Sources */,
-				BF4D4EE52017E5FE002C1E71 /* Room.cpp in Sources */,
+				BF90A1E4201AA3FB005E2396 /* ExitCommand.cpp in Sources */,
+				BFCE73A8201C039200ABE531 /* OpenCommand.cpp in Sources */,
+				BFCE73A5201BF8B300ABE531 /* TextNotifier.cpp in Sources */,
+				BF90A1E1201AA046005E2396 /* Command.cpp in Sources */,
+				BFCE7393201BDADF00ABE531 /* Description.cpp in Sources */,
+				BF90A1DE201A9EB8005E2396 /* Entity.cpp in Sources */,
 				BF268892201689E8007E431C /* main.cpp in Sources */,
+				BFCE7399201BE78A00ABE531 /* TextGraphicsEngine.cpp in Sources */,
+				BFCE739F201BEFEC00ABE531 /* CommandEngine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
