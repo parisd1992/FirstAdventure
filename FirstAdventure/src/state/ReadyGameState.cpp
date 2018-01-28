@@ -33,7 +33,8 @@ void ReadyGameState::runGame(Game& game)
     //initialise the game here
     game.initialise();
     
-    cout << "This is the story of the game...." << endl;
+    cout << "You find yourself in a dungeon, trapped.  The door ahead is shut, yet there must be way to open it."<< endl;
+    cout << "The question is, do you want to?  Are you ready to face what might be waiting on the other side?"<< endl;
     cout << "Press any key to start" << endl;
     
     string input;
