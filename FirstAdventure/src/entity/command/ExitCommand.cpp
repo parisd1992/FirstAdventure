@@ -15,7 +15,7 @@ string ExitCommand::getVerb()
     return verb_;
 }
 
-void ExitCommand::execute(Entity& entity, Notifier& notifier)
+void ExitCommand::execute(Entity& entity, NotificationEngine& notifier)
 {
     Entity* parent = entity.getParentEntity();
     parent->getChildren()->removeChild(&entity);

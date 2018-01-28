@@ -34,5 +34,10 @@ void TextGraphicsEngine::render(Entity &entity)
         }
         cout << "################################################################" << endl;
     }
+    else
+    {
+        cout << entity.getDescription() << endl;
+    }
+    
     cout << endl;
 }

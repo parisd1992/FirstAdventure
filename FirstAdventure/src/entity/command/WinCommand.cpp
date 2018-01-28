@@ -13,7 +13,7 @@ string WinCommand::getVerb()
     return verb_;
 }
 
-void WinCommand::execute(Entity &entity, Notifier &notifier)
+void WinCommand::execute(Entity &entity, NotificationEngine &notifier)
 {    
     //send
     notifier.notify(Notifier::Message(Notifier::MessageType::WIN, "You win!"));

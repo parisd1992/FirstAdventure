@@ -16,7 +16,7 @@ string AttackCommand::getVerb()
     return verb_;
 }
 
-void AttackCommand::execute(Entity &entity, Notifier &notifier)
+void AttackCommand::execute(Entity &entity, NotificationEngine &notifier)
 {
     int attackerStrength = getStrength(entity);
     int attackerHealth = getHealth(entity);

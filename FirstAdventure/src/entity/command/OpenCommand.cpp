@@ -14,7 +14,7 @@ string OpenCommand::getVerb()
     return verb_;
 }
 
-void OpenCommand::execute(Entity &entity, Notifier &notifier)
+void OpenCommand::execute(Entity &entity, NotificationEngine &notifier)
 {
     if(!isOpen_)
     {
