@@ -11,7 +11,9 @@ Built and run on a Mac running macOS 10.13.2.
 To build and run you can:
 
 a. Checkout and import into XCode.
-b. Run CMake in the folder https://github.com/parisd1992/FirstAdventure/tree/master/FirstAdventure to create a Makefile.  Then run Make to create an executable which you can run.
+
+b. Run CMake in the folder https://github.com/parisd1992/FirstAdventure/tree/master/FirstAdventure to create a Makefile.
+Then run Make to create an executable which you can run.
 
 # Design Patterns
 The code touches on a number of design patterns:
