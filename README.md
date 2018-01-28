@@ -2,7 +2,7 @@
 A simple Text Adventure Game in C++ called 'First Adventure'.  
 
 The aim of this project is to practice C++11, design patterns and do some basic game development.  
-As this is an education exercise, some of the code is purposefully over engineered and inefficient.
+As this is an education exercise, some of the code is purposefully over engineered and inefficient, and the story simple.
 
 # Story
 
