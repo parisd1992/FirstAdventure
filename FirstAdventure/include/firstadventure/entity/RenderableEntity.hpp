@@ -13,6 +13,9 @@
 #include "Entity.hpp"
 #include "GraphicsEngine.hpp"
 
+/*
+ Wraps an Entity with a GraphicsEngine for rendering.  Another example of the Component Pattern.
+ */
 class RenderableEntity
 {
 private:

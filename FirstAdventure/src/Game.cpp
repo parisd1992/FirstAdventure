@@ -33,7 +33,7 @@ void Game::handleMessage(Notifier::Message message)
 void Game::initialise()
 {
     /******************
-     * 1: Setup the notifiers if not already set up.
+     * 1: Setup the notifiers if not already set up.  This is the Observer Pattern.
      ******************/
     
     if (!gameNotifier_)
@@ -48,11 +48,11 @@ void Game::initialise()
         notificationEngine_->addNotifier(textNotifier_);
     }
     
-    //TODO: This is complex and should come from a file.
+    //TODO: Below is complex and should come from a file.
     //TODO: Could create a builder to make creating entities simpler.
     
     /******************
-     * 2: Setup the entities of the game
+     * 2: Setup the entities of the game.  DON'T FORGET TO ADD TO RESPECTIVE ARRAYS TO AVOID MEMORY LEAKS.
      ******************/
     
     //Rooms
@@ -243,6 +243,9 @@ void Game::initialise()
     
 }
 
+/*
+ Frees up the memory taken by the Game Entities and Components during a play through, so they can be reloaded when playing again.
+ */
 void Game::reset()
 {
     //delete the game entities
@@ -286,6 +289,9 @@ void Game::reset()
     }
 }
 
+/*
+ Frees up all the memory taken by the Game, including the Notifiers.
+ */
 void Game::deactivate()
 {
     reset();

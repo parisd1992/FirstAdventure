@@ -12,7 +12,9 @@
 #include <stdio.h>
 #include "GraphicsEngine.hpp"
 
-
+/*
+ Renders Entities as ascii text to the console.
+ */
 class TextGraphicsEngine : public GraphicsEngine
 {
 public:

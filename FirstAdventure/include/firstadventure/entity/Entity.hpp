@@ -16,8 +16,11 @@
 class Command;
 class EntityChildren;
 
-//Entity class is the main game object.
-//It holds a number of components.
+/*
+ Entity class is the main game object.  It holds a number of components, which can be populated or null.
+ It is based on the Component pattern (http://www.gameprogrammingpatterns.com/component.html)
+*/
+
 class Entity
 {
 private:

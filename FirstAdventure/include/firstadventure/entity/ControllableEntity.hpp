@@ -13,6 +13,9 @@
 #include "Entity.hpp"
 #include "ControlEngine.hpp"
 
+/*
+Wraps an Entity with a ControlEngine for controlling.  Another example of the Component Pattern.
+*/
 class ControllableEntity
 {
 private:

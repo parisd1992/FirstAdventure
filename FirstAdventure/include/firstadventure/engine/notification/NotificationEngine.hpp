@@ -15,6 +15,12 @@
 
 #include "Notifier.hpp"
 
+
+/*
+ The NotificationEngine knows how to notify as list of Notifiers.
+ This is the Observer pattern (http://www.gameprogrammingpatterns.com/observer.html)
+ */
+
 class NotificationEngine
 {
 private:

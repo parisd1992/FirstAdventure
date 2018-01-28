@@ -14,6 +14,11 @@
 
 using namespace std;
 
+/*
+ Renders an entity as follows:
+ If an Entity A has a parent B, then render that A is in B and sees all the children of B (except itself).
+ If an Entity does not have a parent, then prints the Entity description.
+ */
 void TextGraphicsEngine::render(Entity &entity)
 {    
     std::string name = entity.getDescription();

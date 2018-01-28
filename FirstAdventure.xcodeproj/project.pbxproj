@@ -17,7 +17,6 @@
 		BF3D2A82201E333000DF219D /* WinGameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3D2A80201E333000DF219D /* WinGameState.cpp */; };
 		BF3D2A85201E333D00DF219D /* LooseGameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3D2A83201E333D00DF219D /* LooseGameState.cpp */; };
 		BF3D2A8C201E392900DF219D /* QuitGameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3D2A8A201E392900DF219D /* QuitGameState.cpp */; };
-		BF3D2A8E201E53F000DF219D /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF3D2A8D201E53F000DF219D /* Entity.cpp */; };
 		BF90A1E4201AA3FB005E2396 /* ExitCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF90A1E2201AA3FB005E2396 /* ExitCommand.cpp */; };
 		BFCE7399201BE78A00ABE531 /* TextGraphicsEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCE7397201BE78A00ABE531 /* TextGraphicsEngine.cpp */; };
 		BFCE73A5201BF8B300ABE531 /* TextNotifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFCE73A3201BF8B300ABE531 /* TextNotifier.cpp */; };
@@ -67,7 +66,6 @@
 		BF3D2A84201E333D00DF219D /* LooseGameState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LooseGameState.hpp; sourceTree = "<group>"; };
 		BF3D2A8A201E392900DF219D /* QuitGameState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuitGameState.cpp; sourceTree = "<group>"; };
 		BF3D2A8B201E392900DF219D /* QuitGameState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = QuitGameState.hpp; sourceTree = "<group>"; };
-		BF3D2A8D201E53F000DF219D /* Entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
 		BF4D4EF9201809DE002C1E71 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		BF90A1DD201A9EB8005E2396 /* Entity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
 		BF90A1E0201AA045005E2396 /* Command.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Command.hpp; sourceTree = "<group>"; };
@@ -205,7 +203,6 @@
 				BF3D2A5F201DE81E00DF219D /* ControllableEntity.cpp */,
 				BFEFEF5A201CDB6B0067CA90 /* EntityChildren.cpp */,
 				BFEFEF5D201CED640067CA90 /* EntityChildNode.cpp */,
-				BF3D2A8D201E53F000DF219D /* Entity.cpp */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -398,7 +395,6 @@
 				BFCE73A5201BF8B300ABE531 /* TextNotifier.cpp in Sources */,
 				BFEFEF53201C7DF40067CA90 /* AttackCommand.cpp in Sources */,
 				BF3D2A8C201E392900DF219D /* QuitGameState.cpp in Sources */,
-				BF3D2A8E201E53F000DF219D /* Entity.cpp in Sources */,
 				BFEFEF65201D24340067CA90 /* Game.cpp in Sources */,
 				BFEFEF50201C740A0067CA90 /* UnlockCommand.cpp in Sources */,
 				BF268892201689E8007E431C /* main.cpp in Sources */,

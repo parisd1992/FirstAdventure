@@ -17,10 +17,39 @@ b. Run CMake in the folder https://github.com/parisd1992/FirstAdventure/tree/mas
 The code touches on a number of design patterns:
 
 - Component (http://www.gameprogrammingpatterns.com/component.html)
+
+The Entity class spans multiple domains (Command, Stats, EntityChildren) without coupling them to each other
+[https://github.com/parisd1992/FirstAdventure/blob/master/FirstAdventure/include/firstadventure/entity/Entity.hpp]
+
+The RenderableEntity and ControllableEntity classes are also examples.  They wrap Entity with new functionality without coupling.
+
 - Command (http://www.gameprogrammingpatterns.com/command.html)
+
+The Command class encapsulates requests as objects.
+[https://github.com/parisd1992/FirstAdventure/blob/master/FirstAdventure/include/firstadventure/entity/command/Command.hpp]
+
 - State (http://www.gameprogrammingpatterns.com/state.html)
+
+The game is controlled through a number of GameStates (ready, playing, won, lost, quit).
+
+[https://github.com/parisd1992/FirstAdventure/blob/master/FirstAdventure/include/firstadventure/state/GameState.hpp]
+
 - Observer (http://www.gameprogrammingpatterns.com/observer.html)
+
+The NotificationEngine provides a 'subscriber' for observers (Notifiers) to attach to.
+
+[https://github.com/parisd1992/FirstAdventure/blob/master/FirstAdventure/include/firstadventure/engine/notification/NotificationEngine.hpp]
+
+- Strategy (https://en.wikipedia.org/wiki/Strategy_pattern)
+
+The ControlEngine implementations provide different control strategies.  One is user driven, the other AI.
+
+[https://github.com/parisd1992/FirstAdventure/blob/master/FirstAdventure/include/firstadventure/engine/control/ControlEngine.hpp]
+
 - Object Pool (http://www.gameprogrammingpatterns.com/object-pool.html)
+
+The TextNotifier reuses an Entity to sent its messages
+[https://github.com/parisd1992/FirstAdventure/blob/master/FirstAdventure/include/firstadventure/engine/notification/TextNotifier.hpp]
 
 # Improvements
 

@@ -20,6 +20,11 @@ using namespace std;
 
 class Entity;
 
+/*
+ A command is an action which can be taken by the game Entities.
+ Based on the Command pattern (http://www.gameprogrammingpatterns.com/command.html)
+*/
+
 class Command
 {
 public:

@@ -12,6 +12,11 @@
 #include <stdio.h>
 #include "Entity.hpp"
 
+/*
+ ControlEngine controls an entity.
+ Different implementations allow the Strategy Pattern (https://en.wikipedia.org/wiki/Strategy_pattern)
+ */
+
 class ControlEngine
 {
 public:

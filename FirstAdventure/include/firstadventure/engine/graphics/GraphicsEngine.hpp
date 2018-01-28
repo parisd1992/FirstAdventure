@@ -12,6 +12,9 @@
 #include <stdio.h>
 #include "Entity.hpp"
 
+/*
+ Renders an Entity to the screen
+ */
 class GraphicsEngine
 {
 public:
