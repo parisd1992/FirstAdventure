@@ -4,6 +4,11 @@ A simple Text Adventure Game in C++ called 'First Adventure'.
 The aim of this project is to practice C++11, design patterns and do some basic game development.  
 As this is an education exercise, some of the code is purposefully over engineered and inefficient.
 
+# Story
+
+You find yourself in a dungeon, trapped.  The door ahead is shut, yet there must be way to open it.
+The question is, do you want to?  Are you ready to face what might be waiting on the other side?
+
 # Building and Running
 
 Built and run on a Mac running macOS 10.13.2.
@@ -14,6 +19,8 @@ a. Checkout and import into XCode.
 
 b. Checkout and run CMake in the folder containing the CMakeLists.txt file to create a Makefile.
 Then navigate to the Makefile and run Make to create an executable.
+
+Follow the ingame instructions to navigate through the game.
 
 # Design Patterns
 The code touches on a number of design patterns:
