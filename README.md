@@ -46,7 +46,7 @@ Memory management of created Entities is challenging because they are created in
 
 4 arrays were added to Game to store the individual Entities and its Components.
 
-At the end of each play, these components are freed and memory returned back to the heap.
+At the end of each play, the objects in the arrays are freed and memory returned back to the heap.
 
 The advantage is that the story can easily be changed by updating what is created in initialise().
 
