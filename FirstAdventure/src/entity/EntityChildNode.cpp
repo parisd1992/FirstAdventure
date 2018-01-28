@@ -8,6 +8,10 @@
 
 #include "EntityChildNode.hpp"
 
+EntityChildNode::~EntityChildNode()
+{
+}
+
 void EntityChildNode::appendChild(Entity* entity)
 {
     if (!nextChild_)

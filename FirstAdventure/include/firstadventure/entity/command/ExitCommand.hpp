@@ -20,13 +20,13 @@ private:
     Entity* exitTo_;
     
 public:
-    ExitCommand(Entity* exit, string verb) : exitTo_{exit}, verb_{verb}
+    ExitCommand(Entity* exitTo, string verb) : exitTo_{exitTo}, verb_{verb}
     {
         
     }
     
     virtual string getVerb();
-    virtual void execute(Entity& entity, Notifier& notifier);
+    virtual void execute(Entity& entity, NotificationEngine& notifier);
 };
 
 #endif /* ExitCommand_hpp */

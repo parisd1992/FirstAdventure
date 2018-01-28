@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include <string>
 
-#include "Notifier.hpp"
+#include "NotificationEngine.hpp"
 #include "Entity.hpp"
 
 
@@ -29,7 +29,7 @@ public:
     }
     
     virtual string getVerb() = 0;
-    virtual void execute(Entity& entity, Notifier& notifier) = 0;
+    virtual void execute(Entity& entity, NotificationEngine& notifier) = 0;
 };
 
 #endif /* Command_hpp */

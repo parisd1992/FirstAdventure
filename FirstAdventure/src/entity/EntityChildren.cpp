@@ -9,9 +9,28 @@
 #include "EntityChildren.hpp"
 
 
+EntityChildren::~EntityChildren()
+{
+    //TODO: this seems extrememly inefficient
+    //We are going to iterate through each child node and remove it
+    //Until there are no child nodes left.
+    //Remember a child node can have multiple layers, so removing the top layer does not mean
+    //the node was completely removed.
+    
+    while(numberOfChildren())
+    {
+        //remove the children in reverse order
+        for (int i = numberOfChildren()-1 ; i >= 0 ; i--)
+        {
+            Entity* child = getChild(i);
+            removeChild(child);
+        }
+    }
+}
+
 Entity* EntityChildren::getChild(int index)
 {
-    if (childNodes_[index])
+    if (index < childNodes_.size() && childNodes_[index])
     {
         return childNodes_[index]->peakChild();
     }
@@ -26,7 +45,7 @@ void EntityChildren::addChild(Entity *entity)
 
 void EntityChildren::addChild(Entity *entity, int index)
 {
-    if(childNodes_[index])
+    if(index < childNodes_.size() && childNodes_[index])
     {
         childNodes_[index]->appendChild(entity);
     }
@@ -45,7 +64,7 @@ void EntityChildren::addMultiLayeredChild(Entity *child1, Entity *child2)
 
 void EntityChildren::removeChild(Entity *entity)
 {
-    for(auto iter = childNodes_.begin() ; iter < childNodes_.end() ; iter++)
+    for(auto iter = childNodes_.begin() ; iter != childNodes_.end() ; iter++)
     {
         if (*iter)
         {

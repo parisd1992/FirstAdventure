@@ -35,7 +35,7 @@ public:
     }
     
     virtual string getVerb();
-    virtual void execute(Entity& entity, Notifier& notifier);
+    virtual void execute(Entity& entity, NotificationEngine& notifier);
 };
 
 #endif /* AttackCommand_hpp */

@@ -19,7 +19,9 @@ public:
     {
         TEXT = 0,
         WIN,
-        LOOSE
+        LOOSE,
+        START,
+        QUIT
     };
     
     struct Message
@@ -32,12 +34,12 @@ public:
     };
     
 public:
-    ~Notifier()
+    virtual ~Notifier()
     {
         
     }
     
-    virtual void notify(Message message) = 0;
+    virtual void onNotify(Message message) = 0;
 };
 
 #endif /* Notifier_hpp */
