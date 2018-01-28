@@ -9,6 +9,8 @@ As this is an education exercise, some of the code is purposefully over engineer
 You find yourself in a dungeon, trapped.  The door ahead is shut, yet there must be way to open it.
 The question is, do you want to?  Are you ready to face what might be waiting on the other side?
 
+Hint: Picking up a sword and a shield will help.
+
 # Building and Running
 
 Built and run on a Mac running macOS 10.13.2.
