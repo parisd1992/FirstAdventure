@@ -59,7 +59,7 @@ As this is an education exercise, these improvements are beyond the scope of thi
 
 # Next Steps
 
-## Unit Tests
+## Tests
 
 The nature of the project lends itself well to adding Unit Testing and trying out some C++ frameworks.
 
