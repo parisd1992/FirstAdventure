@@ -59,6 +59,14 @@ As this is an education exercise, these improvements are beyond the scope of thi
 
 # Next Steps
 
+## Tests
+
+The code lends itself well to adding Unit Testing and trying out some C++ frameworks.
+
+We have already carried out Memory Leak testing using XCode Developer Tools.
+
+Performance tests will be an interesting experiement, however optimal performance is not in the scope of this project.
+
 ## Entity Initialisation and Memory Management
 
 The game entities are initialised in the Game class as part of the initialise() method.
