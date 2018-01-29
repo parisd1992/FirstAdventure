@@ -2,7 +2,7 @@
 A simple Text Adventure Game in C++ called 'First Adventure'.  
 
 The aim of this project is to practice C++11, design patterns and do some basic game development.  
-As this is an education exercise, some of the code is purposefully over engineered and inefficient, and the story simple.
+As this is an education exercise, some of the code is purposefully over engineered and the story simple.
 
 # Story
 
@@ -64,8 +64,9 @@ The TextNotifier reuses an Entity to sent its messages
 
 # Improvements
 
-There are a number of design and structural improvements which could be made to the code.  
-Most of these are marked out as TODO comments.  
+With code I think that the simplest solution is often the best one.
+There are a number of design and structural improvements which could be made to the code.
+Most of these are marked out with TODO comments.
 As this is an education exercise, these improvements are beyond the scope of this project.
 
 # Next Steps
