@@ -49,9 +49,9 @@ My day job focuses on building and designing high performant, scalable, fault to
 
 These systems are critical to the day-to-day running of the business.
 
-With C++ I've seen for myself how much the Java Compiler hides from developers in terms of memory management, instance creation, and just about anything else.
+Through C++ I've seen how much the Java Compiler hides from developers in terms of memory management, instance creation, and just about anything else.
 
-With C++ I have a better understanding on what happens behind the scenes when coding in Java and how my OS runs my applications.
+C++ has provided a better understanding on what happens behind the scenes when coding in Java and how my OS runs my applications.
 
 ### Resources
 
@@ -162,7 +162,7 @@ As this is an education exercise, these improvements are beyond the scope of thi
 
 # Next Steps
 
-### Engine and Implementation Separatation.
+### Engine and Implementation Separation.
 
 The engine and implementation share the same codebase.
 
