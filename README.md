@@ -58,7 +58,7 @@ With C++ I have a better understanding on what happens behind the scenes when co
 - Learn C++ for Game Development by Bruce Sutherland (ISBN-13: 978-1430264576)
 - Game Programming Patterns by Robert Nystrom (ISBN: 0990582906)
 
-### Instance Creation
+### Instance Creation On Stack vs Heap
 
 It's interesting to see the different ways C++ let's you create objects and manage their memory, especially compared to Java.
 
@@ -67,47 +67,39 @@ It's interesting to see the different ways C++ let's you create objects and mana
 In Java you create an instance of a class as:
 
 <pre>
-MyClass instance = new MyClass();
+MyClass myInstance = new MyClass();
 </pre>
 
-What does this mean?
+- What does this mean?
 
 Java is actually creating a reference that points to an instance (an area of memory) of MyClass on the heap.
 
 This is why you can change the field values of an instance inside a method, even though Java is 'pass-by-value':
+https://www.journaldev.com/4098/java-heap-space-vs-stack-memory
+
+In other words, myInstance points to an instance (an area of memory) of MyClass on the heap.
+
+C++ uses pointer notation to define that:
 
 <pre>
-
-/**
-Update field values of an instance inside a method
-**/
-
-void updateName(MyClass myClass) //the reference pointing to myClass is passed by value, not the instance itself.
-{
-  //we are using the copy of the reference pointing to myClass to update the underlying instance's name.
-  //so myClass is updated on the heap, and all other references pointing to it will use it's new value.
-  myClass.setName("name 2");
-}
-
-MyClass instance = new MyClass();
-instance.setName("name 1"); //instance name = name 1
-updateName(instace); //instance name = name 2
-
-/**
-Doesn't work for primitive types
-**/
-
-void updateTo4(int number) //number is passed by value
-{
-  //we are updating the copy of number so number is not changed outside of the method.
-  number = 4;
-}
-
-int myNumber = 1;
-updateTo4(myNumber); //myNumber is still 4 and is not changed outside of the method 
-
+MyClass* myInstance = new MyClass();
 </pre>
 
+Read as: myInstance is a pointer to an instance of MyClass (on the heap).
+
+That means we can create instances of MyClass that are not on the heap:
+
+<pre>
+MyClass myInstanceOnStack; //creates an instance of MyClass on the stack
+</pre>
+
+The memory taken up by myInstanceOnStack will be freed once the method that creates this instance is out of scope.
+
+- Considerations
+
+Larger instances should be created on the heap because there is generally more space.
+If you create an instance on the heap, you need to free the memory yourself (smart pointers can help here).
+If you create an instance on the stack in a method, you should not return it from the creating method.
 
 
 # Design Patterns
