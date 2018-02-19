@@ -60,6 +60,55 @@ With C++ I have a better understanding on what happens behind the scenes when co
 
 ### Instance Creation
 
+It's interesting to see the different ways C++ let's you create objects and manage their memory, especially compared to Java.
+
+(Note: I'm assuming a basic understanding of memory management in Java / Operating Systems -e.g. what is the heap, stack, pass by reference, pass by value)
+
+In Java you create an instance of a class as:
+
+<pre>
+MyClass instance = new MyClass();
+</pre>
+
+What does this mean?
+
+Java is actually creating a reference that points to an instance (an area of memory) of MyClass on the heap.
+
+This is why you can change the field values of an instance inside a method, even though Java is 'pass-by-value':
+
+<pre>
+
+/**
+Update field values of an instance inside a method
+**/
+
+void updateName(MyClass myClass) //the reference pointing to myClass is passed by value, not the instance itself.
+{
+  //we are using the copy of the reference pointing to myClass to update the underlying instance's name.
+  //so myClass is updated on the heap, and all other references pointing to it will use it's new value.
+  myClass.setName("name 2");
+}
+
+MyClass instance = new MyClass();
+instance.setName("name 1"); //instance name = name 1
+updateName(instace); //instance name = name 2
+
+/**
+Doesn't work for primitive types
+**/
+
+void updateTo4(int number) //number is passed by value
+{
+  //we are updating the copy of number so number is not changed outside of the method.
+  number = 4;
+}
+
+int myNumber = 1;
+updateTo4(myNumber); //myNumber is still 4 and is not changed outside of the method 
+
+</pre>
+
+
 
 # Design Patterns
 The code touches on a number of design patterns to help with resuability:
