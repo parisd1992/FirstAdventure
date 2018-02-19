@@ -1,5 +1,10 @@
 # Contents
 **[Project Goals](#project-goals)**<br>
+**[Building and Running](#building-and-running)**<br>
+**[Learning C++](#learning-c++)**<br>
+**[Design Patterns](#design-patterns)**<br>
+**[Improvements](#improvements)**<br>
+**[Next Steps](#next-steps)**<br>
 
 # Project Goals
 
@@ -9,7 +14,7 @@
 The aim of this project is to practice C++11, design patterns and do some basic game development.  
 As this is an education exercise, some of the code is purposefully over engineered and the implemented story simple.
 
-## 'First Adventure' Story
+### 'First Adventure' Story
 
 You find yourself in a dungeon, trapped.  The door ahead is shut, yet there must be way to open it.
 The question is, do you want to?  Are you ready to face what might be waiting on the other side?
@@ -37,7 +42,7 @@ My favourite part has been the freedom and control it gives to developers when d
 
 I enjoy the challenge of understanding how the compiler works, how my code is executed by the Operating System, and how I can make it more efficient whilst keeping it easy to understand.
 
-## Why learn C++?
+### Why learn C++?
 
 My day job focuses on building and designing high performant, scalable, fault tolerant, reusable systems in Java.
 
@@ -47,32 +52,13 @@ With C++ I've seen for myself how much the Java Compiler hides from developers i
 
 With C++ I have a better understanding on what happens behind the scenes when coding in Java and how my OS runs my applications.
 
-## Resources
+### Resources
 
 - Learn C++ for Game Development by Bruce Sutherland (ISBN-13: 978-1430264576)
 - Game Programming Patterns by Robert Nystrom (ISBN: 0990582906)
 
-## Instance Creation
+### Instance Creation
 
-
-
-
-
-
-
-
-# Building and Running
-
-Built and run on a Mac running macOS 10.13.2 (C++11).
-
-To build and run you can either:
-
-a. Checkout and import into XCode.
-
-b. Checkout and run CMake in the folder containing the CMakeLists.txt file to create a Makefile.
-Then navigate to the Makefile and run Make to create an executable.
-
-Follow the ingame instructions to navigate through the game.
 
 # Design Patterns
 The code touches on a number of design patterns to help with resuability:
@@ -128,7 +114,7 @@ As this is an education exercise, these improvements are beyond the scope of thi
 
 # Next Steps
 
-## Engine and Implementation Separatation.
+### Engine and Implementation Separatation.
 
 The engine and implementation share the same codebase.
 
@@ -138,7 +124,16 @@ Users could easily make their own adventure games and explore the depths of thei
 
 See the section "Entity Initialisation and Memory Management" below for more details.
 
-## Tests
+### Tests
+
+Testing is a key aspect of developing a reusable system.
+
+I would go so far as to say nothing is reusable without testing:
+
+- If you want to resuse something, you need to know what it does; testing can answer that.
+- If you don't have tests, how can you ensure what you are reusing works?
+
+As this is an educational exercise focusing on learning C++ it was not included as part of the initial goals, however I would recommend developers devote as much time to testing as they do making their code clean and efficient.
 
 The nature of the project lends itself well to adding Unit Testing and trying out some C++ frameworks.
 
@@ -146,7 +141,7 @@ We have already carried out Memory Leak testing using XCode Developer Tools.
 
 Performance tests will be an interesting experiement, however optimal performance is not within the scope of this project.
 
-## Entity Initialisation and Memory Management
+### Entity Initialisation and Memory Management
 
 The game entities are initialised in the Game class as part of the initialise() method.
 
