@@ -39,7 +39,7 @@ Follow the ingame instructions to navigate through the game.
 
 It's been really fun learning C++ over the past few weeks.
 
-My favourite part has been the freedom and control it gives to developers when doing pretty much anything.
+My favourite part has been the freedom and control it gives to developers when doing pretty much anything (see "Instance Creation On Stack vs Heap" for an example).
 
 I enjoy the challenge of understanding how the compiler works, how my code is executed by the Operating System, and how I can make it more efficient whilst keeping it easy to understand.
 
@@ -60,7 +60,9 @@ With C++ I have a better understanding on what happens behind the scenes when co
 
 ### Instance Creation On Stack vs Heap
 
-It's interesting to see the different ways C++ let's you create objects and manage their memory, especially compared to Java.
+It was interesting to understand the different ways C++ let's you create objects and manage their memory; a fundamental concept for an object oriented language.
+
+This was something I did not think about when writing Java code.
 
 (Note: I'm assuming a basic understanding of memory management in Java / Operating Systems -e.g. what is the heap, stack, pass by reference, pass by value)
 
@@ -95,11 +97,15 @@ MyClass myInstanceOnStack; //creates an instance of MyClass on the stack
 
 The memory taken up by myInstanceOnStack will be freed once the method that creates this instance is out of scope.
 
-- Considerations
+- So?
+
+If an instance is created on the stack, we can access it directly without having to 'dereference' the pointer (this could be faster).
+
+If you create an instance on the stack in a method, you should not return it from the creating method.
 
 Larger instances should be created on the heap because there is generally more space.
+
 If you create an instance on the heap, you need to free the memory yourself (smart pointers can help here).
-If you create an instance on the stack in a method, you should not return it from the creating method.
 
 
 # Design Patterns
