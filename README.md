@@ -1,3 +1,6 @@
+# Contents
+**[Project Goals](#project-goals)**<br>
+
 # Project Goals
 
 - Create a reusable Text Adventure Game Engine in C++.
@@ -6,7 +9,7 @@
 The aim of this project is to practice C++11, design patterns and do some basic game development.  
 As this is an education exercise, some of the code is purposefully over engineered and the implemented story simple.
 
-## Story
+## 'First Adventure' Story
 
 You find yourself in a dungeon, trapped.  The door ahead is shut, yet there must be way to open it.
 The question is, do you want to?  Are you ready to face what might be waiting on the other side?
@@ -32,7 +35,7 @@ It's been really fun learning C++ over the past few weeks.
 
 My favourite part has been the freedom and control it gives to developers when doing pretty much anything.
 
-I enjoy the challenge of understanding how the compiler works, how my code is executed by the Operating System, and how I can make it more efficient, whilst keeping it easy to understand.
+I enjoy the challenge of understanding how the compiler works, how my code is executed by the Operating System, and how I can make it more efficient whilst keeping it easy to understand.
 
 ## Why learn C++?
 
@@ -40,7 +43,7 @@ My day job focuses on building and designing high performant, scalable, fault to
 
 These systems are critical to the day-to-day running of the business.
 
-C++ has helped me realise how much the Java Compiler hides from developers in terms of memory management, instance creation, and just about anything else.
+With C++ I've seen for myself how much the Java Compiler hides from developers in terms of memory management, instance creation, and just about anything else.
 
 With C++ I have a better understanding on what happens behind the scenes when coding in Java and how my OS runs my applications.
 
@@ -49,9 +52,9 @@ With C++ I have a better understanding on what happens behind the scenes when co
 - Learn C++ for Game Development by Bruce Sutherland (ISBN-13: 978-1430264576)
 - Game Programming Patterns by Robert Nystrom (ISBN: 0990582906)
 
-## Previous Experience
-
 ## Instance Creation
+
+
 
 
 
