@@ -11,6 +11,9 @@
 
 #include <stdio.h>
 
+/**
+ Defines a set of stats for an entity
+ **/
 class Stats
 {
 private:

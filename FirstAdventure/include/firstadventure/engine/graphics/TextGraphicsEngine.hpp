@@ -13,7 +13,7 @@
 #include "GraphicsEngine.hpp"
 
 /*
- Renders Entities as ascii text to the console.
+ Implementation of GraphicsEngine that renders Entities as ascii text to the console.
  */
 class TextGraphicsEngine : public GraphicsEngine
 {

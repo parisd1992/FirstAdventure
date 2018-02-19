@@ -12,6 +12,9 @@
 #include <stdio.h>
 #include "GameState.hpp"
 
+/**
+ State when the game is ready to be played
+ **/
 class ReadyGameState : public GameState
 {
 public:

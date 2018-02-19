@@ -13,6 +13,9 @@
 #include "Notifier.hpp"
 #include "GraphicsEngine.hpp"
 
+/**
+ Implementation of Notifier that outputs any notifications as text to cout
+ **/
 class TextNotifier : public Notifier
 {
 private:

@@ -12,6 +12,9 @@
 #include <stdio.h>
 #include "GameState.hpp"
 
+/**
+ State when the game is won
+ **/
 class WinGameState : public GameState
 {
 public:

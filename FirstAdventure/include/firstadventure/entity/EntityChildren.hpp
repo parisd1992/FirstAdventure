@@ -15,7 +15,10 @@
 
 class Entity;
 
-
+/**
+ A component to hold a list of children belonging to an entity.
+ Children are stored as a vector of EntityChildNode*
+ **/
 class EntityChildren
 {
 private:

@@ -12,6 +12,9 @@
 #include <stdio.h>
 #include "GameState.hpp"
 
+/**
+ State when the game is lost
+ **/
 class LooseGameState : public GameState
 {
 public:

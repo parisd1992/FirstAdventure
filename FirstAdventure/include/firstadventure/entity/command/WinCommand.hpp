@@ -12,6 +12,9 @@
 #include <stdio.h>
 #include "Command.hpp"
 
+/**
+ Implementation of Command that wins the game
+ **/
 class WinCommand : public Command
 {
 private:

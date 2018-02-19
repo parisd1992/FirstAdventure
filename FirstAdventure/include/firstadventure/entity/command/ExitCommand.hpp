@@ -13,6 +13,9 @@
 
 #include "Command.hpp"
 
+/**
+  Implementation of Command that changes an entities parent.  Used to simulate 'exiting' a room.
+ **/
 class ExitCommand : public Command
 {
 private:

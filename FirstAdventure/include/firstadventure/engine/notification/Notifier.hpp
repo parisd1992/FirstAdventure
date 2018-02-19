@@ -12,6 +12,9 @@
 #include <stdio.h>
 #include <string>
 
+/**
+ Interface knows how to handle any notifications
+ **/
 class Notifier
 {
 public:

@@ -54,7 +54,7 @@ public:
 
     }
     
-    ~Entity();
+    ~Entity(){}
     
     std::string getDescription()
     {

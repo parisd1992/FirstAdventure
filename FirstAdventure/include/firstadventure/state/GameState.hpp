@@ -20,9 +20,13 @@ class WinGameState;
 class LooseGameState;
 class QuitGameState;
 
+/**
+ Describes a game state
+ **/
 class GameState
 {
 public:
+    //defines the possible game states
     static ReadyGameState readyGameState_;
     static PlayGameState playGameState_;
     static WinGameState winGameState_;

@@ -12,6 +12,9 @@
 #include <stdio.h>
 #include "Command.hpp"
 
+/**
+ Implementation of Command that change the stats of an entity.  Used to 'attack' entities.
+ **/
 class AttackCommand : public Command
 {
 private:

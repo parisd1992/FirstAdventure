@@ -20,6 +20,9 @@
 
 using namespace std;
 
+/**
+ Implementation of ControlEngine were controls are driven via the user
+ **/
 class ManualControlEngine : public ControlEngine
 {
 private:

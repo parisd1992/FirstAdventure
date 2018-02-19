@@ -33,7 +33,7 @@ class GameState;
 
 class Game
 {
-    friend class PlayGameState;
+    friend class PlayGameState; //so PlayGameState can access the game renerable and controllable entities
     
 private:
     static const unsigned int MAX_RENDERABLE_ENTITIES = 1;
@@ -98,7 +98,14 @@ public:
      */
     void deactivate();
 
+    /*
+     Runs the game
+     */
     void runGame();
+    
+    /*
+     Forwards a message to the notification engine
+     */
     void handleMessage(Notifier::Message message);
     
     NotificationEngine* getNotificationEngine()

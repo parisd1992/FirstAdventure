@@ -13,7 +13,7 @@
 #include "Entity.hpp"
 
 /*
- Renders an Entity to the screen
+ Interface that renders an Entity to the screen
  */
 class GraphicsEngine
 {

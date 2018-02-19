@@ -12,6 +12,10 @@
 #include <stdio.h>
 #include "Command.hpp"
 
+/**
+ Implementation of Command that can trigger a second command if a condition is met.  Used to simulate 'unlocking' a door if there
+ is a key.
+ **/
 class UnlockCommand : public Command
 {
 private:

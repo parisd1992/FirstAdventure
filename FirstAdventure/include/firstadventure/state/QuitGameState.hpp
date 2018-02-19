@@ -12,6 +12,9 @@
 #include <stdio.h>
 #include "GameState.hpp"
 
+/**
+ State when the game has been quit
+ **/
 class QuitGameState : public GameState
 {
 public:

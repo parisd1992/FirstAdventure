@@ -13,6 +13,9 @@
 
 #include "Command.hpp"
 
+/**
+ Implementation of Command that adds a child to an entity.  Used to simulate 'opening' a chest.
+ **/
 class OpenCommand : public Command
 {
 private:

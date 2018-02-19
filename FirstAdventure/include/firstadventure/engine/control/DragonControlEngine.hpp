@@ -20,6 +20,9 @@
 
 using namespace std;
 
+/**
+ Implementation of ControlEngine that controls a dragon via AI
+ **/
 class DragonControlEngine : public ControlEngine
 {   
 private:

@@ -13,6 +13,9 @@
 #include "Notifier.hpp"
 #include "Game.hpp"
 
+/**
+ Implementation of Notifier that sends notifications to the Game
+ **/
 class GameNotifier : public Notifier
 {
 private:
