@@ -8,7 +8,8 @@
 
 # Project Goals
 
-- Create a reusable Text Adventure Game Engine in C++.
+- Practice C++.
+- Create a Text Adventure Game Engine in C++ using reusable design patterns.
 - Implement a simple text adventure game using the engine called 'First Adventure'.
 
 The aim of this project is to practice C++11, design patterns and do some basic game development.  
@@ -122,7 +123,7 @@ It would be exciting to package the engine as a separate product.
 
 Users could easily make their own adventure games and explore the depths of their imagination.
 
-See the section "Entity Initialisation and Memory Management" below for more details.
+See the section "Tests" and "Entity Initialisation and Memory Management" below for more details.
 
 ### Tests
 
