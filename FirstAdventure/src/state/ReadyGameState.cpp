@@ -17,6 +17,9 @@ using namespace std;
 
 PlayGameState GameState::playGameState_;
 
+/**
+ Loads the game and gets it ready for play
+ **/
 void ReadyGameState::runGame(Game& game)
 {
     
@@ -35,7 +38,7 @@ void ReadyGameState::runGame(Game& game)
     
     cout << "You find yourself in a dungeon, trapped.  The door ahead is shut, yet there must be way to open it."<< endl;
     cout << "The question is, do you want to?  Are you ready to face what might be waiting on the other side?"<< endl;
-    cout << "Press any key to start" << endl;
+    cout << "Type any key to start" << endl;
     
     string input;
     cin >> input;

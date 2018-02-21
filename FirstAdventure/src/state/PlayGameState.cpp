@@ -19,13 +19,18 @@ using namespace std;
 WinGameState GameState::winGameState_;
 LooseGameState GameState::looseGameState_;
 
+/**
+ Plays the game.  This is the game loop.
+ **/
 void PlayGameState::runGame(Game& game)
 {
+    //render any renderable entities
     for(auto iter = game.renderableEntities_.begin() ; iter != game.renderableEntities_.end() ; iter++ )
     {
         (*iter)->render();
     }
-        
+    
+    //control any controllable entities
     for(auto iter = game.controllableEntities_.begin() ; iter !=  game.controllableEntities_.end() ; iter++ )
     {
         //TODO there are no checks to see if an entity is still alive (i.e. controllable).
