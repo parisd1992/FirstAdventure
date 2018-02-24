@@ -1,6 +1,20 @@
+# First Adventure
+
+![Alt text](screenshots/FirstAdventure_OpeningTitle.png?raw=true "Opening Title")
+
+First Adventure is a text adventure game engine and game in C++ with support for a text battle system, character stats progression, enemy AI and scenario based story progression.
+
+### Story
+
+You find yourself in a dungeon, trapped.  The door ahead is shut, yet there must be way to open it.
+The question is, do you want to?  Are you ready to face what might be waiting on the other side?
+
+Hint: Picking up a sword and a shield will help.
+
 # Contents
 **[Project Goals](#project-goals)**<br>
 **[Building and Running](#building-and-running)**<br>
+**[Screenshots](#screenshots)**<br>
 **[Learning C++](#learning-c++)**<br>
 **[Design Patterns](#design-patterns)**<br>
 **[Improvements](#improvements)**<br>
@@ -15,13 +29,6 @@
 The aim of this project is to practice C++11, design patterns and do some basic game development.  
 As this is an education exercise, some of the code is purposefully over engineered and the implemented story simple.
 
-### 'First Adventure' Story
-
-You find yourself in a dungeon, trapped.  The door ahead is shut, yet there must be way to open it.
-The question is, do you want to?  Are you ready to face what might be waiting on the other side?
-
-Hint: Picking up a sword and a shield will help.
-
 # Building and Running
 
 Built and run on a Mac running macOS 10.13.2 (C++11).
@@ -34,6 +41,30 @@ b. Checkout and run CMake in the folder containing the CMakeLists.txt file to cr
 Then navigate to the Makefile and run Make to create an executable.
 
 Follow the ingame instructions to navigate through the game.
+
+# Screenshots
+
+### Your First Choice
+
+![Alt text](screenshots/FirstAdventure_FirstChoice.png?raw=true "Your first choice")
+
+### You need a key to unlock some doors!
+
+![Alt text](screenshots/FirstAdventure_UnlockingDoorsWithoutKey.png?raw=true "You need a key to unlock some doors!")
+
+### Good thing you can open chests and pick up items
+
+![Alt text](screenshots/FirstAdventure_PickingUpItems.png?raw=true "Good thing you can open chests and pick up items")
+
+### If you've found the right key you can unlock doors
+
+![Alt text](screenshots/FirstAdventure_UnlockingDoorsWithKey.png?raw=true "Now you can unlock the doors")
+
+### But do you really want to?  Lucky we found that shield...
+
+![Alt text](screenshots/FirstAdventure_AttackingDragons.png?raw=true "But do you really want to?  Lucky we found that shield...")
+
+
 
 # Learning C++
 
