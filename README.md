@@ -184,14 +184,12 @@ The ControlEngine implementations provide different control strategies.  One is 
 The TextNotifier reuses an Entity to sent its messages
 [https://github.com/parisd1992/FirstAdventure/blob/master/FirstAdventure/include/firstadventure/engine/notification/TextNotifier.hpp]
 
-# Improvements
+# Potential Future Work
 
 With code I think that the simplest solution is often the best one.
 There are a number of design and structural improvements which could be made to the code.
 Most of these are marked out with TODO comments.
 As this is an education exercise, these improvements are beyond the scope of this project.
-
-# Next Steps
 
 ### Engine and Implementation Separation.
 
