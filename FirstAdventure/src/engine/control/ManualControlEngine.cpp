@@ -17,7 +17,7 @@ void ManualControlEngine::generateCommands(Entity& entity)
     
     if (parent)
     {
-        EntityChildren* children = 
+        EntityChildren* children = parent->getChildren();
         
         for(int i = 0; i < children->numberOfChildren(); i++)
         {
